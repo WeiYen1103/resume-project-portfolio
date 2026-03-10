@@ -25,7 +25,7 @@ Test Tool/
 
 <font size=4>**👁‍🗨UR主介面**</font>  
 
-![alt text](image-1.png)
+![alt text](Tool主介面.png)
 
 > 左邊 cmd；右邊 Script；中間以及下面有一些功能按鍵
 
@@ -162,5 +162,6 @@ Test Tool/
   2. ```connect()```和指定的序列埠連接  
   3. ``` send_and_wait_response()``` 傳送指令並等待裝置回應  
   4. ```disconnect()```關閉序列埠連線
+
 
 
