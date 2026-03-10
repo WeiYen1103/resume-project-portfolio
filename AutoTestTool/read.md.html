@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///D:/%E5%AF%A6%E7%BF%92/2026/resume-project-portfolio/AutoTestTool/read.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>read.md</title>
+
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="./read.md_files/mermaid.min.js.下載"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="readme">README</h1>
+<!-- 底下標籤來源參考寫法可至：https://github.com/Envoy-VC/awesome-badges#github-stats -->
+<p>｜<img src="./read.md_files/Made for-VSCode-1f425f.svg" alt="">｜<img src="./read.md_files/Python-14354C" alt=""></p>
+<blockquote>
+<p><font size="3">這個 Auto Test Tool 是 for 控制 Pattern Gen 以及投影機，使用python編譯環境，由韌體研發處一部實習生 <strong>Jessica.Yen</strong> 所寫。</font></p>
+</blockquote>
+<h1 id="auto-test-tool">Auto Test Tool</h1>
+<h2 id="%F0%9F%93%A6%E5%B0%88%E6%A1%88%E7%B5%90%E6%A7%8B">📦專案結構</h2>
+<pre class="hljs"><code><div>Auto Test Tool/  
+├── Auto Test Tool.exe            #自動化測試執行檔
+├── assets/  
+│   ├── command_list.yaml         #defult Pattern Gen指令集  
+│   ├── dataTIM_PTN_link.yaml     #PG_tim&amp;ptn對照  
+│   ├── RS232_command_list.yaml   #defult RS232指令集  
+│   └── telnet_command_list.yaml  #defult Telnet指令集  
+├── scripts/  
+│   └── example_sequence.yaml     #存測試腳本 
+├── logs/
+│   └── log_output.txt            #存測試log output
+└── captures/  
+    └── capture_example.png       #截圖  
+</div></code></pre>
+<p><font size="4"><strong>👁‍🗨UR主介面</strong></font></p>
+<p><img src="./read.md_files/Tool主介面.png" alt="alt text"></p>
+<blockquote>
+<p>左邊 cmd；右邊 Script；中間以及下面有一些功能按鍵</p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%A7%A9%E5%8A%9F%E8%83%BD%E7%B8%BD%E8%A6%BD">🧩功能總覽</h2>
+<p><strong>✅支援裝置</strong></p>
+<ul>
+<li>Pattern Generator（預設Chroma 2235）</li>
+<li>投影機控制（預設Christie）</li>
+<li>外接鏡頭截圖 (USB #0)</li>
+<li>外接鏡頭及時觀看畫面 (Camera Check)</li>
+</ul>
+<p><strong>✅主要功能</strong></p>
+<ul>
+<li>可以使用Telnet與機台連線下指令</li>
+<li>可以自行匯入 PG/ RS232/ Telnet 指令集</li>
+<li>RS232 可以使用 ASCII / HEX 進制</li>
+<li>單點擊將左側指令輸入腳本</li>
+<li>可以按 shift 一次選擇多行指令進入腳本</li>
+<li>可以按 ctrl + 點選</li>
+<li>可以修改 id 欄位來調整下指令的順序</li>
+<li>雙點擊指令編輯</li>
+<li>每筆指令可設定 Delay 時間</li>
+<li>Pattern Gen 指令名稱自動對應解析度/Pattern</li>
+<li>「隨機延遲」、「擷取畫面截圖」指令</li>
+<li>Script Load / Export（YAML 格式）</li>
+<li>可設定 COM port / Baudrate</li>
+<li>執行結果與回傳 Log 可即時顯示</li>
+<li>Pause / Continue 測試流程</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%96%A5%EF%B8%8F-%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E">🖥️ 使用說明</h2>
+<blockquote>
+<p><font size="4"><font color="#B2222"><strong>實際操作前請先閱讀注意事項</strong></font>	</font><br>
+<strong>在開啟執行檔前，請確保在與執行檔同level中，有創建專案結構中的資料夾與資料集(如下)</strong><br>
+<strong>assets/<br>
+├── command_list.yaml       (defult)<br>
+├── dataTIM_PTN_link.yaml   (for PG)<br>
+├── RS232_command_list.yaml (defult)<br>
+└── telnet_command_list.yaml (defult)</strong><br>
+<strong>scripts/ logs/ captures/</strong></p>
+</blockquote>
+<ol>
+<li>開啟執行檔<pre class="hljs"><code><div>Auto Test Tool.exe
+</div></code></pre>
+</li>
+<li>設定連接參數
+<ul>
+<li>選擇 PG 與 Proj. 的 COM port 與 Baudrate</li>
+<li>預設 COM ==N/A==; Baudrate 115200</li>
+<li>選擇裝置中斷符號</li>
+</ul>
+<blockquote>
+<p>若要使用 Telnet 功能，請輸入 IP 以及 Port</p>
+</blockquote>
+</li>
+<li>編輯測試腳本
+<ul>
+<li>左側 Tab 可切換 PG  /  RS232 / Telnet 指令</li>
+<li>cmd 點擊至右側 Script 區域</li>
+<li>可直接雙擊調整指令參數或 Delay 值</li>
+<li>LOAD TIM、LOAD PTN、RUN TIM 時，Script 自動顯示對應解析度/Pattern 名稱</li>
+</ul>
+</li>
+<li>插入特殊指令
+<ul>
+<li>Capture：插入一筆截圖指令（來源為 CAME）</li>
+<li>Add Random Delay：插入一筆隨機延遲指令，範圍自訂</li>
+</ul>
+</li>
+<li>執行腳本
+<ul>
+<li>點選 START TEST 開始執行</li>
+<li>指令會依序送出至相應裝置（PG / RS232 / Telnet / CAMERA）</li>
+<li>結果與裝置回應顯示於 Log 區域</li>
+</ul>
+</li>
+<li>儲存與載入腳本
+<ul>
+<li>EXPORT SCRIPT：將目前腳本匯出(YAML)</li>
+<li>LOAD SCRIPT：從檔案載入腳本(YAML)</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="%F0%9F%93%84yaml%E8%85%B3%E6%9C%AC%E6%A0%BC%E5%BC%8F">📄YAML腳本格式</h3>
+<blockquote>
+<p>yaml 格式中，中括號[ ]；大括號 { }，皆為特殊字元，指令使用雙引號包起來即可<br>
+"[INFO?]"<br>
+"{INFO?}"</p>
+</blockquote>
+<ul>
+<li>Pattern Gen/ RS232 指令格式<pre class="hljs"><code><div>#========= Pattern Gen ============
+- cmd: LOAD PRG xxxx;
+  name: Load Program
+- cmd: STO TIM xxxx;
+  name: Store Timing
+
+#============ RS232 ===============
+- cmd: (LOC+LANG0)
+  name: Language/English
+- cmd: (LOC+LANG1)
+  name: Language/French
+</div></code></pre>
+</li>
+<li>dataTIM_PTN_link 資料集格式<pre class="hljs"><code><div>- cmd: LOAD TIM 601;
+  name: CTA-640X480P-59 4:3
+- cmd: LOAD TIM 602;
+  name: CTA-640X480P-60 4:3
+</div></code></pre>
+</li>
+<li>腳本輸出格式<pre class="hljs"><code><div>- id: 1
+  name: CTA-1920X1080P-60 16:9
+  cmd: 'PG: LOAD TIM 632;'
+  delay: 1000
+- id: 2
+  name: Test Pattern/Grid
+  cmd: 'RS232: (ITP 1)'
+  delay: 1000
+- id: 3
+  name: Capture Image
+  cmd: 'CAME: CAPTURE'
+  delay: 1000
+- id: 4
+  name: Random Delay 1000-2000ms
+  cmd: RANDOM_DELAY:1000-2000
+  delay: random
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="%E2%9D%97-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">❗ <strong>注意事項</strong></h2>
+<blockquote>
+<p><font color="#B2222"><font size="3"><strong>請遵守以下操作方式，以免程式開啟多個執行序，Error~~</strong></font>  </font></p>
+</blockquote>
+<ul>
+<li>
+<p>腳本中每行指令，若有更改指令參數要按下 ENTER 儲存後再做其他動作</p>
+</li>
+<li>
+<p>開始測試腳本後 (尚未測試完成)，若中途要修改腳本指令，請先按下 <strong>STOP TEST</strong> ，再做修改，<br>
+再次按下 <strong>START TEST</strong> 即可執行新的腳本</p>
+</li>
+<li>
+<p>開始測試腳本時 (尚未測試完成)，若單純是要重新再執行一次腳本指令，請先按下 <strong>STOP TEST</strong> ，<br>
+再按下 <strong>START TEST</strong> ，即可重新執行測試腳本，實現 RETRY</p>
+<ul>
+<li><img src="./read.md_files/image.png" alt="alt text"><br>
+<strong>看到log顯示這兩行提示才是完整STOP 程式，再做其他動作！</strong></li>
+</ul>
+</li>
+<li>
+<p>使用Telnet功能，輸入IP . 字符時，記得切換成英文輸入法才能使用小數字鍵的 . 字符</p>
+<blockquote>
+<hr>
+</blockquote>
+</li>
+<li>
+<p>所有指令來源都需以 <strong>PG: / RS232: / Telnet: / CAME: / Random Delay:</strong> 為前綴，以利系統識別發送Source</p>
+</li>
+<li>
+<p>若 RS232 是要以16進制傳送，Source請改成 <strong>RS232HEX:</strong>，系統才可以讀byte</p>
+</li>
+<li>
+<p>Telnet 若要使用16進制傳送，Source請改成 <strong>TelnetHEX:</strong>，系統才可以讀byte</p>
+</li>
+<li>
+<p>十六進制輸入格式為</p>
+<pre class="hljs"><code><div>RS232HEX: 00 01 05
+</div></code></pre>
+<blockquote>
+<hr>
+</blockquote>
+</li>
+<li>
+<p>Delay 值需 ≥ 500ms，否則會跳出警告</p>
+</li>
+<li>
+<p>外接 USB 攝影機需插入後再執行程式，預設使用 index=0</p>
+</li>
+<li>
+<p>若 COM port 未選擇，系統會忽略該來源，並在Log [WARN]</p>
+</li>
+<li>
+<p>腳本匯出儲存於scripts/ 資料夾中</p>
+</li>
+<li>
+<p>截圖自動儲存於 captures/ 資料夾中</p>
+</li>
+<li>
+<p>為確保 相機初始化時間不會過長，在相機初始化時使用了以下設定（故僅適用於 Windows 平台）：<br>
+<strong>cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%9B%A0%EF%B8%8F-%E5%BB%B6%E4%BC%B8%E8%88%87%E7%B6%AD%E8%AD%B7">🛠️ <strong>延伸與維護</strong></h2>
+<ul>
+<li><strong>assets/command_list.yaml</strong> 可自行匯入 defult Pattern Gen 指令集</li>
+<li><strong>assets/proj_command_list.yaml</strong> 可自行匯入 defult RS232 指令集</li>
+<li><strong>assets/telnet_command_list.yaml</strong> 可自行匯入 defult Telnet 指令集</li>
+<li><strong>assets/dataTIM_PTN_link.yaml</strong> 控制 TIM/PTN 對應的 Name 顯示 (PG)</li>
+<li>若需加入更多裝置或指令格式，請擴充：
+<ul>
+<li>on_drag_drop 指令插入格式</li>
+<li>_run_test_script 的執行邏輯</li>
+<li>capture_image() 中攝影機 index 的偵測或參數化</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="%E2%9A%99-%E5%87%BD%E5%BC%8F%E8%AA%AA%E6%98%8E">⚙ <strong>函式說明</strong></h2>
+<ul>
+<li>
+<p><strong>class PatternGenGUI</strong></p>
+<ol>
+<li><strong><strong>init</strong>()</strong><br>
+介面初始化、建Tree</li>
+<li><strong>load_command_list()</strong> / <strong>load_proj_command_list()</strong>  / <strong>load_telnet_command_list()</strong><br>
+載入defult PG /RS232/Telnet 指令，匯入UR左側cmd</li>
+<li><strong>load_PG()</strong> / <strong>load_RS232()</strong>  / <strong>load_Telnet()</strong>
+自行匯入 PG 和 RS232指令</li>
+<li><strong>on_drag_start()</strong> / <strong>on_drag_drop()</strong><br>
+拖曳指令插入腳本的邏輯</li>
+<li><strong>on_double_click_script_cell()</strong><br>
+允許點擊編輯腳本內容</li>
+<li><strong>stop_test()</strong><br>
+中斷連線，清除樹</li>
+</ol>
+<hr>
+<ol start="7">
+<li><strong>insert_random_delay_command()</strong><br>
+插入一個設定範圍的random delay指令</li>
+<li><strong>insert_capture_command()</strong> /  <strong>capture_image()</strong><br>
+將截圖指令插入腳本；擷取鏡頭畫面，儲存成圖片</li>
+<li><strong>remove_selected_script()</strong> / <strong>clear_script()</strong><br>
+移除目前選取的指令；	清空整個Script</li>
+<li><strong>pause_test()</strong> / <strong>continue_test()</strong><br>
+測試時的控制功能</li>
+<li><strong>save_log_output()</strong> / <strong>clear_log_output()</strong><br>
+儲存目前log output；清空log區域</li>
+</ol>
+<hr>
+<ol start="12">
+<li><strong>load_script()</strong><br>
+載入 script 到 script_tree 中</li>
+<li><strong>export_script_only()</strong><br>
+匯出 script</li>
+<li><strong>start_test()</strong> / <strong>_run_test_script()</strong><br>
+啟動一輪測試執行緒；<br>
+依照script執行各條命令，包含判別source（PG / RS232 / Telnet /CAPTURE）並處理回應</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p><strong>class UARTController</strong></p>
+<ol>
+<li><strong><strong>init</strong>()</strong><br>
+初始化UART連接參數</li>
+<li><strong>connect()</strong><br>
+和指定的序列埠連接</li>
+<li><strong>send_and_wait_response()</strong><br>
+傳送指令並等待裝置回應</li>
+<li><strong>disconnect()</strong><br>
+關閉序列埠連線</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p><strong>class TelnetController</strong></p>
+<ol>
+<li><strong><strong>init</strong>()</strong><br>
+初始化 Telnet 連線</li>
+<li><strong>connect()</strong><br>
+和目標設備建立 Telnet 連線</li>
+<li><strong>send_and_receive()</strong><br>
+傳送Telnet 指令並接收裝置回傳</li>
+<li><strong>close()</strong><br>
+關閉Telnet連線</li>
+</ol>
+</li>
+</ul>
+
+
+
+
+
+
+
+</body></html>
