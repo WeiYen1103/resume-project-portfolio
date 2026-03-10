@@ -88,5 +88,5 @@ Python · TCP/IP · Socket Programming
 
 # About Me
 
-I am a Computer Science graduate student interested in **embedded systems, firmware development, and system automation**.  
+I am a Computer Science graduate student interested in **software/firmware development, and system automation**.  
 I enjoy building tools that improve engineering workflows and integrating software with hardware systems.
