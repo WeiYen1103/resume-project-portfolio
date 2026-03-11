@@ -9,9 +9,9 @@ import os
 from openai import OpenAI
 
 # 初始化 Neo4jGPTQuery 
-url = "bolt://localhost:7687"  # Neo4j URL
-user = "neo4j"
-password = "bbbb1234"
+url = "URL"  # Neo4j URL
+user = "user"
+password = "password"
 
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
