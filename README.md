@@ -21,8 +21,8 @@ A Python-based automated testing tool developed during my firmware internship at
 Python · UART · RS232 · Telnet · YAML · Automation Testing
 
 **Demo**
-[![Auto Test Tool Demo]]
-(https://youtu.be/mKFqsrT9aao)
+[![Auto Test Tool Demo](AutoTestTool/Tool主介面.png)]
+https://youtu.be/mKFqsrT9aao
 
 📁 Project Folder  
 `AutoTestTool/`
